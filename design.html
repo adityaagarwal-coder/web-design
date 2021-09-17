@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(241, 235, 225);
+        }
+        .head
+        {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            /* position: fixed; */
+        }
+        #register {
+            text-decoration: none;
+            color: brown;
+        }
+
+        .navigation {
+            display: flex;
+            background-color: rgb(255, 0, 51);
+            /* position: absolute;*/
+            /* right: 0px;  */
+            /* left: 0px;  */
+            box-shadow: inset 66px 0px 35px 7px rgb(48, 40, 40);
+            /* position: ; */
+        }
+
+        #apply {
+            background-color: white;
+            border-radius: 3px;
+            color: rgb(151, 17, 69);
+            padding-top: 10px;
+            position: relative;
+            /* right: 0px; */
+            left: 300px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .list {
+            display: inline-block;
+            color: white;
+            margin-inline: 30px;
+        }
+
+        .list:hover {
+            background-color: black;
+        }
+
+        .container1 {
+            display: flex;
+            position: relative;
+            top: 150px;
+        }
+
+        .content {
+            position: absolute;
+            left: 200px;
+        }
+
+        #view {
+            background-color: rgb(255, 0, 0);
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            padding-inline: 20px;
+            border-radius: 5px;
+            box-shadow: inset 15px 0px 50px 0px rgb(88, 39, 39);
+        }
+
+        #img {
+            width: 35%;
+            position: absolute;
+            right: 0px;
+        }
+
+        .container2 {
+            background-color: rgb(58, 14, 14);
+            position: relative;
+            top: 600px;
+            height: 165vh;
+        }
+
+        .content1 {
+            text-align: center;
+            background-color: rgb(10, 10, 31);
+            position: relative;
+            top: 10px;
+            color: white;
+            padding: 150px;
+        }
+
+        #options {
+            display: flex;
+            padding: 50px;
+        }
+
+        .options {
+            margin-inline: 15px;
+            animation: aditya 3s ;
+            
+        }
+        @keyframes aditya
+        {
+            from
+            {
+                opacity: 0;
+            }
+            to
+            {
+                opacity: 1;
+            }
+        }
+        #options1 {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .options1 {
+            background-color: white;
+            margin-inline: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .button a {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            margin-inline: 5px;
+        }
+
+        .content2 {
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        .options1 b {
+            color: black;
+        }
+
+        .container3 {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(8, 12, 31);
+            position: fixed;
+            /* top: 332px; */
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            /* height: 75vh; */
+        }
+        .listfoot {
+            color: white;
+            list-style: none;
+        }
+        .heading
+        {
+            color: rgb(60, 111, 168);
+        }
+        .lastlist
+        {
+            text-align: left;
+        }
+        .follow
+        {
+            position: absolute;
+            top: 180px;
+            left: 0px;
+            right: 0px;
+            background-color: rgb(8, 12, 31);
+        }
+        #lastlist
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .followlist
+        {
+            margin-inline: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="header" style="background-color: rgb(241,235,225);">
+            <p style="color: brown;">
+                A 1-Day Free Workshop to know whether Coding is right for you
+                <a href="#" id="register"><b>Register Now</b></a>
+            </p>
+        </div>
+        <div class="navigation">
+            <img src="https://d27028dliefpk3.cloudfront.net/static/brand/MasaiLogo.svg" alt="">
+            <nav class="navbar">
+                <ul id="list">
+                    <li class="list">Courses</li>
+                    <li class="list">Fees and ISA</li>
+                    <li class="list">Hire Masai Grads</li>
+                    <li class="list">FAQ</li>
+                </ul>
+            </nav>
+            <a href="#" id="apply">Apply Now</a>
+        </div>
+    </header>
+    <div class="container1">
+        <div class="content">
+            <h1>
+                The coding school that cares <b>about you.</b>
+            </h1>
+            <h3>
+                Pay ₹0 fees till you earn 10LPA+
+            </h3>
+            <a href="#" id="view">View Courses</a>
+        </div>
+        <img src="https://d27028dliefpk3.cloudfront.net/static/welcome/hero-image_rgaixo_c_scale,w_1010.png" alt=""
+            id="img">
+    </div>
+    <div class="container2">
+        <div class="content1">
+            <h1>
+                <b>
+                    The path to your success.
+                </b>
+            </h1>
+            <div id="options">
+                <div class="options">
+                    <img src="https://d27028dliefpk3.cloudfront.net/static/welcome/sw-developer-icon.svg" alt="">
+                    <p>Become a Software Developer with
+                        our Web & Android App
+                        Development courses.</p>
+                </div>
+                <div class="options">
+                    <img src="https://d27028dliefpk3.cloudfront.net/static/welcome/zero-cost-icon.svg" alt="">
+                    <p>Study at Zero Fee and pay only
+                        after you get a job that pays
+                        minimum 10LPA.</p>
+                </div>
+                <div class="options">
+                    <img src="https://d27028dliefpk3.cloudfront.net/static/welcome/holistic-development-icon.svg"
+                        alt="">
+                    <p>Build your communication and
+                        presentation skills, in addition to
+                        becoming a successful developer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content2">
+            <h1>
+                Our Courses
+            </h1>
+            <div id="options1">
+                <div class="options1" style="cursor: pointer;"><img src="https://d27028dliefpk3.cloudfront.net/static/welcome/web-dev.svg"
+                        alt="">
+                        <p>FULL STACK
+                        <br>
+                        <b>Web Development<br>
+                            <div class="button">
+                                <a href="#">Full-Time</a><a href="#">30 weeks</a>
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div class="options1" style="cursor: pointer;"><img src="https://d27028dliefpk3.cloudfront.net/static/welcome/android-dev.svg"
+                    alt="">
+                <br><p>
+                <b>Android App Development<br>
+                    <div class="button">
+                        <a href="#">Full-Time</a><a href="#">30 weeks</a>
+                </b>
+            </div>
+        </p>
+        </div>
+        <div class="options1" style="cursor: pointer;"><img src="https://d27028dliefpk3.cloudfront.net/static/welcome/web-dev.svg" alt="">
+            <br><p>
+            <b>Web Development<br>
+                <div class="button">
+                    <a href="#">Half-Time</a><a href="#">52 weeks</a>
+            </b>
+        </div>
+        </p>
+    </div>
+    <footer class="foot">
+    <div class="container3">
+        <ul class="lastlist">
+            <h4 class="heading">
+                COMPANIES
+            </h4>
+            <li class="listfoot">About</li>
+            <li class="listfoot">Newsroom</li>
+            <li class="listfoot">Terms of Service</li>
+            <li class="listfoot">Contact</li>
+        </ul>
+        <ul class="lastlist">
+            <h4 class="heading">
+                STUDENTS RESOURCES
+            </h4>
+            <li class="listfoot">Alumni Directory</li>
+            <li class="listfoot">Testimonials</li>
+            <li class="listfoot">Fees and ISA</li>
+            <li class="listfoot">FAQ</li>
+            <li class="listfoot">Masai Bootcamp</li>
+        </ul>
+        <ul class="lastlist">
+            <h4 class="heading">
+                OPPORTUNITIES
+            </h4>
+            <li class="listfoot">We're Hiring</li>
+            <li class="listfoot">Our Industry Mentors</li>
+            <li class="listfoot">Become an Industry Mentor</li>
+        </ul>
+        <div class="follow">
+            <hr>
+            <h2>
+                FOLLOW US:
+            </h2>
+            <ul style="list-style: none;" id="lastlist">
+            <li class="followlist">Twitter</li>
+            <li class="followlist">INSTAGRAM</li>
+            <li class="followlist">Youtube</li>
+            <li class="followlist">Facebook</li>
+            <li class="followlist">Linkedin</li>
+            <li class="followlist">Github</li></ul>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
